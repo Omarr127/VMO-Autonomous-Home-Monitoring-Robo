@@ -183,8 +183,8 @@ VMO-Autonomous-Home-Monitoring-Robo
 │
 ├── images
 │   ├── Robot.jpeg
-│   ├── PCB_Render.png
-│   └── Architecture.png
+│   ├── PCB.png
+│   └── Protus Simulation.png
 │
 ├── Report
 │   └── Technical Documentation.pdf
