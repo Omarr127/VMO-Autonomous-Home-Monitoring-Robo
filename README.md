@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="images/Robot.jpeg" width="750">
+<img src="Images/Robot.jpeg" width="750">
 
 <br>
 
@@ -214,11 +214,9 @@ Custom PCB design was developed to integrate:
 - Logic-level conversion
 - Microcontroller communication
 - Sensor interfaces
-
-<p align="center">
-<img src="images/PCB_Render.png" width="700">
+  <p align="center">
+<img src="Images/PCB.png" width="700">
 </p>
-
 ---
 
 # 🚀 Engineering Highlights
@@ -243,25 +241,6 @@ Custom PCB design was developed to integrate:
 - ROS 2 architecture
 - Differential drive kinematics
 - Sensor-based decision making
-
----
-
-# 📸 Project Gallery
-
-## Robot Prototype
-
-<p align="center">
-<img src="images/Robot.jpeg" width="700">
-</p>
-
-
-## PCB 3D Design
-
-<p align="center">
-<img src="images/PCB.png" width="700">
-</p>
-
-
 ---
 
 # 🔮 Future Improvements
