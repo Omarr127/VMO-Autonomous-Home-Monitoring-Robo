@@ -1,10 +1,5 @@
 # 🤖 VMO — Autonomous Home Pet & Safety Monitoring Robot
 
-<div align="center">
-
-<img src="images/Robot.jpeg" width="750">
-
-<br>
 
 ### Autonomous Robotics • Embedded Systems • Edge AI • ROS 2 • IoT
 
