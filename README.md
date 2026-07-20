@@ -261,22 +261,7 @@ Custom PCB design was developed to integrate:
 
 ---
 
-# 🔮 Future Improvements
 
-- SLAM-based autonomous mapping
-- Visual-Inertial Odometry
-- Autonomous charging station
-- Mobile application development
-- On-device AI acceleration using NPU
-- Advanced navigation algorithms
-
----
-
-# 📄 License
-
-This project is shared for educational and portfolio purposes.
-
----
 
 <div align="center">
 
