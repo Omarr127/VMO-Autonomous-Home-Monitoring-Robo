@@ -1,185 +1,123 @@
 # 🤖 VMO – Autonomous Home Pet & Safety Monitoring Robot
 
-> **An autonomous robotics platform combining Embedded Systems, ROS 2, Edge AI, IoT, and Computer Vision for smart home monitoring.**
+<div align="center">
 
-![Platform](https://img.shields.io/badge/Platform-Raspberry%20Pi%204-red)
-![ROS2](https://img.shields.io/badge/ROS-2%20Humble-blue)
-![ESP32](https://img.shields.io/badge/ESP32-S3-black)
-![PIC](https://img.shields.io/badge/PIC16F877A-Microcontroller-green)
-![FreeRTOS](https://img.shields.io/badge/RTOS-FreeRTOS-orange)
-![Language](https://img.shields.io/badge/C%2FC%2B%2B-Python-success)
+### Autonomous Robotics • Embedded Systems • Edge AI • ROS 2 • IoT
+
+![ROS2](https://img.shields.io/badge/ROS-2%20Humble-22314E?logo=ros)
+![ESP32](https://img.shields.io/badge/ESP32-S3-E7352C?logo=espressif)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-4-C51A4A?logo=raspberrypi)
+![FreeRTOS](https://img.shields.io/badge/RTOS-FreeRTOS-00979D)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8?logo=opencv)
+![YOLO](https://img.shields.io/badge/YOLO-Object%20Detection-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker)
+
+*A multi-layer autonomous robot that combines embedded systems, robotics, computer vision, and AI for intelligent home monitoring.*
+
+</div>
 
 ---
 
 # 📖 Overview
 
-VMO (Virtual Monitoring Operator) is an autonomous mobile robot designed to function as both a **home safety monitor** and an **interactive robotic companion**.
+VMO (Virtual Monitoring Operator) is an autonomous mobile robot designed to operate as both a **smart home safety monitor** and an **interactive robotic companion**.
 
-The system combines multiple processing layers to achieve deterministic real-time control, intelligent perception, autonomous navigation, and cloud connectivity.
+Instead of relying on a single controller, VMO distributes computation across multiple processing layers to ensure deterministic real-time control while simultaneously performing AI inference, computer vision, autonomous navigation, cloud synchronization, and voice interaction.
 
-Unlike conventional embedded projects that rely on a single controller, VMO distributes computation across four specialized processing units to maximize performance and reliability.
+This architecture demonstrates how heterogeneous embedded systems can cooperate to build scalable autonomous robotic platforms.
 
 ---
 
 # ✨ Features
 
-- 🤖 Autonomous mobile navigation
-- 👤 Human detection and tracking
-- 📷 Computer vision using YOLO
-- 🧠 ROS 2 autonomous control
+- 🤖 Autonomous robot navigation
+- 👤 Human detection & tracking
+- 📷 Computer vision with YOLO
+- 🚧 Obstacle avoidance
+- 🌡️ Temperature & humidity monitoring
+- 🔥 Gas leak detection
 - 📡 IoT communication
 - ☁️ Firebase cloud synchronization
-- 🌐 ESP32 web interface
-- 🎤 Voice interaction using Speech Recognition + Gemini
-- 🌡️ Environmental monitoring
-- 🔥 Gas leakage detection
-- 🚧 Obstacle avoidance
-- 📱 Android-based expressive user interface
+- 🎤 Voice assistant using Speech Recognition + Gemini
+- 📱 Android-based animated face & user interface
+- ⚡ Multi-controller embedded architecture
+- 🧠 ROS 2 autonomous decision making
 
 ---
 
 # 🏗 System Architecture
 
-The robot is organized into four processing layers.
-
 ```text
-                Android Smartphone
-          (Face • Voice • Expressions)
-
-                     │
-                     ▼
-
-             Raspberry Pi 4
-      ROS 2 + Computer Vision + AI
-      Navigation + Cloud Services
-
-                     │
-              USB Serial (115200)
-
-                     ▼
-
-              ESP32-S3 (FreeRTOS)
-        Communication & Task Scheduler
-
-                     │
-             UART (9600 baud)
-
-                     ▼
-
-              PIC16F877A
-      Real-Time Sensors & Motor Control
+                     Android Smartphone
+           Face • Voice • Expressions • UI
+                          │
+                          ▼
+                 Raspberry Pi 4 (Brain)
+      ROS 2 • AI • YOLO • Navigation • Cloud
+                          │
+                 USB Serial Communication
+                          │
+                          ▼
+                 ESP32-S3 (Middleware)
+          FreeRTOS • Networking • Scheduling
+                          │
+                     UART Communication
+                          │
+                          ▼
+              PIC16F877A (Real-Time Layer)
+       Sensors • PWM • Motors • Interrupts
 ```
 
-Each processor performs only the tasks it is best suited for:
+---
 
-| Layer | Responsibility |
-|--------|---------------|
-| Android | User Interface & Voice Assistant |
-| Raspberry Pi 4 | AI, Computer Vision, ROS 2 |
-| ESP32-S3 | Communication & Task Scheduling |
-| PIC16F877A | Real-time Motor and Sensor Control |
+# ⚙️ Technology Stack
+
+| Category | Technologies |
+|-----------|--------------|
+| **Embedded Systems** | PIC16F877A, ESP32-S3, FreeRTOS |
+| **Robotics** | ROS 2 Humble, Differential Drive, Docker |
+| **Computer Vision** | OpenCV, YOLO26 Nano, ONNX Runtime |
+| **Programming** | C, C++, Python |
+| **Networking** | UART, UDP, Protobuf, COBS |
+| **Cloud** | Firebase, Google Speech API, Gemini API |
+| **Hardware Design** | KiCad, Proteus |
 
 ---
 
-# 🧠 Technologies Used
+# 🔌 Hardware
 
-### Robotics
-
-- ROS 2 Humble
-- Differential Drive Kinematics
-- Subsumption Architecture
-- Docker
-
-### Embedded Systems
-
-- PIC16F877A
-- ESP32-S3
-- FreeRTOS
-- Embedded C
-- UART
-- PWM
-- ADC
-- Timers
-- Interrupts
-
-### Artificial Intelligence
-
-- YOLO26 Nano
-- ONNX Runtime
-- OpenCV
-- Computer Vision
-
-### Cloud & Networking
-
-- Firebase
-- Google Speech API
-- Gemini API
-- UDP
-- Protobuf
-- COBS Serialization
-
-### Hardware Design
-
-- KiCad PCB
-- Proteus
-- Custom PCB Design
-
----
-
-# 🔌 Hardware Components
-
-## Processing Units
+### Processing Units
 
 - Raspberry Pi 4
 - ESP32-S3
 - PIC16F877A
 
-## Sensors
+### Sensors
 
 - MQ-2 Gas Sensor
-- DHT11 Temperature & Humidity Sensor
-- HC-SR04 Ultrasonic Sensors
+- DHT11 Temperature & Humidity
+- HC-SR04 Ultrasonic Array
 - Optical Wheel Encoders
 
-## Actuators
+### Actuation
 
 - Differential Drive Motors
 - L298N Motor Driver
 
-## Power System
+### Power
 
 - 3S LiPo Battery
 - Battery Management System
-- Dual Buck Regulators
 - INA226 Power Monitor
-
----
-
-# ⚙️ Software Architecture
-
-```
-Application Layer
-        │
-ROS 2 Nodes
-        │
-Communication Middleware
-        │
-ESP32 FreeRTOS Tasks
-        │
-PIC Firmware
-        │
-Hardware Drivers
-```
-
-The firmware follows a layered architecture separating hardware abstraction, middleware, communication, and application logic for improved scalability and maintainability.
+- Dual Buck Regulators
 
 ---
 
 # 📂 Repository Structure
 
-```
+```text
 VMO-Autonomous-Home-Monitoring-Robot
-
+│
 ├── Report/
 │   └── Technical Documentation.pdf
 │
@@ -197,50 +135,55 @@ VMO-Autonomous-Home-Monitoring-Robot
 
 ---
 
-# 🚀 Key Engineering Challenges
+# 🚀 Engineering Highlights
 
-During development, several real-world engineering challenges were addressed, including:
+✅ Multi-layer embedded architecture
 
-- Electrical noise from motor switching
-- Serial communication reliability
-- Multi-controller synchronization
-- Ultrasonic sensor cross-talk
-- Embedded memory limitations
-- Raspberry Pi thermal management
-- Real-time scheduling
-- Logic level conversion between 5V and 3.3V systems
+✅ ROS 2 autonomous navigation
+
+✅ Edge AI inference using YOLO
+
+✅ FreeRTOS task scheduling
+
+✅ Custom PCB design
+
+✅ Multi-microcontroller communication
+
+✅ Cloud-connected IoT robot
+
+✅ Computer vision based tracking
 
 ---
 
-# 📈 Future Improvements
+# 💡 Future Improvements
 
 - Visual-Inertial Odometry (VIO)
 - Autonomous charging dock
-- Smartphone NPU acceleration
-- Improved autonomous navigation
 - Mobile application
-- SLAM integration
+- SLAM-based navigation
+- Smartphone NPU acceleration
+- Improved autonomous path planning
 
 ---
 
-# 👨‍💻 Team
+# 📸 Project Gallery
 
-- Matthew Nader
-- **Omar Tamer**
-- Mohamed Gadwal
-- Amr Emad Mohamed
-- Mohamed Magdy
+> *Add images here.*
 
----
+```
+Robot Photo
 
-# 📚 Course
+PCB Design
 
-**CIE 349 – Embedded Systems**
+Proteus Simulation
 
-Computer and Information Engineering
+ROS 2 Architecture
+
+Android Interface
+```
 
 ---
 
 # 📄 License
 
-This project is shared for educational and portfolio purposes.
+This repository is shared for educational and portfolio purposes.
