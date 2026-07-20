@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="Images/Robot.jpeg" width="750">
+<img src="4_Images/Robot.jpeg" width="750">
 
 <br>
 
@@ -215,7 +215,7 @@ Custom PCB design was developed to integrate:
 - Microcontroller communication
 - Sensor interfaces
   <p align="center">
-<img src="Images/PCB.png" width="700">
+<img src="4_Images/PCB.png" width="700">
 </p>
 ---
 
