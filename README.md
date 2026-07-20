@@ -168,9 +168,9 @@ VMO-Autonomous-Home-Monitoring-Robot
 
 # 📸 Project Gallery
 
-> *<p align="center">
-  <img src="images/Robot.jpg" width="700">
-</p>.*
+<p align="center">
+  <img src="images/Robot.jpeg" width="700">
+</p>
 
 ```
 Robot Photo
