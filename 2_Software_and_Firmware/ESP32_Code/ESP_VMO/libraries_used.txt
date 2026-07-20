@@ -1,0 +1,4 @@
+To compile this ESP32 code, the following libraries are required via the Arduino Library Manager: 
+1. ArduinoJSON 
+2. WebSockets (by Markus Sattler) 
+3. Nanopb (for Protocol Buffers) 
